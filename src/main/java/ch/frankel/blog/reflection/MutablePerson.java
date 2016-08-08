@@ -4,9 +4,9 @@ import java.util.Date;
 
 public class MutablePerson implements Person {
 
-    private String firstName;
-    private String lastName;
-    private Date birthDate;
+	String firstName;
+	String lastName;
+	Date birthDate;
 
     public String getFirstName() {
         return firstName;

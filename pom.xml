@@ -9,6 +9,7 @@
         <jmh.version>1.13</jmh.version>
         <javac.target>1.8</javac.target>
         <uberjar.name>benchmarks</uberjar.name>
+        <reflectasm.version>1.11.3</reflectasm.version>
     </properties>
     <build>
         <plugins>
@@ -60,6 +61,11 @@
         </plugins>
     </build>
     <dependencies>
+        <dependency>
+            <groupId>com.esotericsoftware</groupId>
+            <artifactId>reflectasm</artifactId>
+            <version>${reflectasm.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.openjdk.jmh</groupId>
             <artifactId>jmh-core</artifactId>
